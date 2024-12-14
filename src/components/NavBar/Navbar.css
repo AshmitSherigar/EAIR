@@ -1,0 +1,26 @@
+.navigation{
+    height: 60px;
+    width: 100%;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 25px;
+    display: fixed;
+
+}
+
+.navigation>h4, .navigation>h1{
+    color: white;
+    cursor: pointer;
+}
+.navigation h4:hover{
+    opacity: 80%;
+}
+.navigation>h4:active{
+    scale: 0.95;
+}
+.navigation>h1::selection , .navigation>h4::selection{
+    
+    user-select: none;
+}
