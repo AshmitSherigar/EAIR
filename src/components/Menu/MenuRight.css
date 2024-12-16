@@ -33,10 +33,12 @@
     position: relative;
 }
 .NavMenu:hover{
-    opacity: 1;
+    opacity: 0.89;
+    cursor: pointer;
+
 }
-.NavMenu::after{
-    content: "hello";
+.NavMenu:hover:after{
+    content: " ⟩";
 
 
 }
