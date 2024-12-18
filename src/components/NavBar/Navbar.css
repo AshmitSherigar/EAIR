@@ -1,26 +1,42 @@
-.navigation{
-    height: 60px;
+/* General navigation styles */
+.navigation {
+    height: 10vh;
     width: 100%;
-    /* background-color: beige; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px 25px;
-    display: fixed;
 
 }
 
-.navigation>h4, .navigation>h1{
-    color: white;
+/* Remove underline and control text appearance for links */
+.nav-links {
+    text-decoration: none;
+    text-transform: none; 
+    color: inherit; 
     cursor: pointer;
 }
-.navigation h4:hover{
-    opacity: 80%;
+
+/* Styling for h1 inside .nav-links */
+.nav-logo .nav-links h1 {
+    color: black;
 }
-.navigation>h4:active{
-    scale: 0.95;
+
+/* Styling for h4 inside .nav-links */
+.nav-items .nav-links h4 {
+    color: black;
+    transition: opacity 0.3s;
 }
-.navigation>h1::selection , .navigation>h4::selection{
-    
+
+.nav-items .nav-links h4:hover {
+    opacity: 0.9;
+}
+
+.nav-items .nav-links h4:active {
+    transform: scale(0.95);
+}
+
+.nav-links h1::selection,
+.nav-links h4::selection {
     user-select: none;
 }

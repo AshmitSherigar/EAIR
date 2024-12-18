@@ -1,38 +1,23 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./Menu.css";
 import MenuRight from "./MenuRight";
 import MenuLeft from "./MenuLeft";
-import gsap from "gsap";
-import { useNavigate } from 'react-router-dom'
-
-// import { useGSAP } from "@gsap/react";
+import transition from "../transistion";
 
 
 
-function Menu(props) {
-  // console.log(props);
-  const navigate = useNavigate()
 
-
-  const menuRef = useRef(null);
-  useEffect(() => {
-    if (props.menuOpen) {
-      gsap.to(menuRef.current, {
-        top: 0,
-      });
-    } else {
-      gsap.to(menuRef.current, {
-        top: "-100%",
-        onComplete:()=> navigate("/"),
-      });
-    }
-  }, [props.menuOpen , navigate]);
+function Menu() {
+  // console.log("hello");
   return (
-    <div ref={menuRef} className="menu">
+    
+    <div className="menu">
+
       <MenuLeft></MenuLeft>
-      <MenuRight menuOpen={props.menuOpen} setmenuOpen={props.setmenuOpen}></MenuRight>
+      <MenuRight></MenuRight>
+
     </div>
   );
 }
 
-export default Menu;
+export default transition(Menu);

@@ -1,134 +1,127 @@
-.menu-right{
+.menu-right {
     width: 40%;
     height: 100%;
-    /* background-color: powderblue; */
     padding: 32px 27px;
-}
-.menu-right-top h4{
+
+  }
+  
+  .NavMenu {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+
+  }
+  
+  .NavMenu .block {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    overflow: hidden;
+  }
+  
+  .NavMenu .letter {
+    display: inline-block;
+    transition: transform 0.1s cubic-bezier(0.76, 0, 0.024, 1);
+  }
+  
+  .NavMenu:hover .letter,
+  .NavMenu.play .letter {
+    transform: translateY(-100%); 
+  }
+  
+  .NavMenu .block:last-child {
     color: white;
-    user-select: none;
-
-}
-.menu-right-top h4:hover{
-    opacity: 80%;
-    cursor: pointer;
-}
-.menu-right-top h4:active{
-    transform: scaleY(0.8);
-    transform-origin: center;
-}
-
-
-.menu-right-center{
+  }
+  
+  .NavMenu .letter:nth-child(1) {
+    transition-delay: 0s;
+  }
+  
+  .NavMenu .letter:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+  
+  .NavMenu .letter:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+  
+  .NavMenu .letter:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+  
+  .NavMenu .letter:nth-child(5) {
+    transition-delay: 0.4s;
+  }
+  
+  .NavMenu .letter:nth-child(6) {
+    transition-delay: 0.5s;
+  }
+  
+  .NavMenu .letter:nth-child(7) {
+    transition-delay: 0.6s;
+  }
+  
+  .NavMenu .letter:nth-child(8) {
+    transition-delay: 0.7s;
+  }
+  
+  .menu-right-center {
     height: 50%;
     width: 100%;
-    /* background-color: bisque; */
     padding: 15px 160px;
-    
-}
-.NavMenu{
-    position: relative;
-}
-.NavMenu:hover{
-    opacity: 0.89;
-    cursor: pointer;
-
-}
-.NavMenu:hover:after{
-    content: " ⟩";
-
-
-}
-.menu-right-center img{
+  }
+  
+  .menu-right-center img {
     height: 40px;
     width: 40px;
     margin-bottom: 85px;
-    
-}
-.menu-right-center h1{
-    color: white;
+  }
+  
+  .menu-right-center h1 {
     text-align: left;
     line-height: 29px;
-    
-    
-    
-}
-.menu-right-bottom{
+  }
+  
+  .menu-right-bottom {
     height: 50%;
     width: 100%;
-    /* background-color:tan; */
     padding: 20px;
-    /* outline: 1px solid green; */
-}
-.menu-right-bottom-part{
+  }
+  
+  .menu-right-bottom-part {
     height: 25%;
     width: 100%;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* outline: 1px solid blue; */
-    
-}
-.menu-right-bottom-part h6{
+  }
+  
+  .menu-right-bottom-part h6 {
     width: 10%;
     font-size: 11px;
-    
-}
-.Active{
-
-    border-left: 5px solid hsl(0, 0%, 100%);
-    
-    animation:  blinkTextCursor 0.7s infinite ;
+  }
+  
+  .Active {
+    border-left: 5px solid black;
+    animation: blinkTextCursor 0.7s infinite;
     white-space: nowrap;
-    /* text-indent: 1px; */
-    
-}
-.Tag:hover{
+  }
+  
+  .Tag:hover {
     opacity: 0.9;
     cursor: pointer;
     scale: 0.98;
-}
-
-.Email:hover{
-    opacity: 0.9;
-
-}
-@keyframes blinkTextCursor {
-    from{
-        border-left-color: hsl(0, 0%, 100%);
-    }
-    to{
-        
-        border-left-color: transparent;
-    }
-
-    
-}
-/* .active {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    /* background: red !important; */
-
-  
-  /* .active::before {
-    content: "";
-    width: 8px;
-    height: 8px;
-    background-color: white;
-    border-radius: 50%;
-    animation: blink 1s infinite;
   }
   
-  @keyframes blink {
-    0%, 100% {
-      opacity: 1;
+  .Email:hover {
+    opacity: 0.9;
+  }
+  
+  @keyframes blinkTextCursor {
+    from {
+      border-left-color: black;
     }
-    50% {
-      opacity: 0;
+    to {
+      border-left-color: transparent;
     }
-  } */ 
+  }
+  

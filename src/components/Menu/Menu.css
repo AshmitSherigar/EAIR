@@ -1,16 +1,9 @@
 .menu{
-    background-color: black;
+    
+  background-color: rgb(224, 255, 224);
 
     height: 100vh;
     
     width: 100%;
-
     display: flex;
-    top: -100%;
-    position: absolute;
-    transition: all ease-in-out;
-    
-}
-h1{
-    color: black;
 }

@@ -1,20 +1,13 @@
 import React from 'react';
-import CanvasAnimation from './CanvasAnimation';
-import './Home.css';
-
+import "./Home.css"
+import { transform } from 'framer-motion';
+import transition from '../transistion';
 const Home = () => {
   return (
-    <div className="main" id="main">
-      <div className="wrapper">
-        <div className="page1">
-          <CanvasAnimation />
-        </div>
-        <div className="page2"></div>
-        <div className="page3"></div>
-        <div className="page4"></div>
-      </div>
+    <div className="Home">
+      <h1>homepage</h1>
     </div>
   );
 };
 
-export default Home;
+export default transition(Home);

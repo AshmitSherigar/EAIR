@@ -1,29 +1,28 @@
-import React, { useState } from 'react'
+import React from "react";
+import Navbar from "./components/NavBar/Navbar";
+import Menu from "./components/Menu/Menu";
+import Home from "./components/HomePage/Home";
 import "./App.css"
-import Navbar from './components/NavBar/Navbar'
-import Menu from './components/Menu/Menu'
-import Home from './components/HomePage/Home'
-import { Routes , Route } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 
 function App() {
-  const [menuOpen , setmenuOpen] = useState(false)
-  const navigate = useNavigate()
-
+  const location = useLocation();
+  
   return (
     <>
-      {/* <Menu ></Menu> */}
-      <Navbar menuOpen={menuOpen} setmenuOpen={setmenuOpen}></Navbar> 
+      <Navbar />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="*" element={<h1>404 - Page Not Found</h1>} />
 
-
-      <Routes>
-        <Route path="/" element={<Home/>}></Route>
-        <Route path="/menu" element={<Menu menuOpen={menuOpen} setmenuOpen={setmenuOpen}/>}></Route>
-      </Routes>
-      
+        </Routes>
+      </AnimatePresence>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
