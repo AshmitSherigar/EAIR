@@ -1,0 +1,38 @@
+.text-scroller {
+    background-color: rgb(201, 250, 201);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    overflow-x: hidden;
+    padding: 4vw 0;
+    width: 100%;
+    box-sizing: border-box; 
+    border-top: 1px solid;
+    border-bottom: 2px solid;
+  }
+  
+  .marquee {
+    display: flex;
+    align-items: center;
+    
+    padding: 0 1.5vw;
+
+  }
+  
+  .marquee img {
+    height: 55px;
+    object-fit: contain;
+    margin: 0 100px;
+  }
+  
+  .marquee h1 {
+    font-size: 70px;
+
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
