@@ -3,6 +3,7 @@ import "./Home.css";
 import transistion from "../transistion";
 import EyeSVG from "./EyeSVG";
 import Page2 from "./Page2";
+import Page3 from "./Page3/Page3";
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
   
@@ -27,6 +28,7 @@ const Home = () => {
         <EyeSVG scrollY={scrollY} />
       </div>
       <Page2></Page2>
+      <Page3></Page3>
 
     </div>
   );

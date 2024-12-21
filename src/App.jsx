@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/NavBar/Navbar";
 import Menu from "./components/Menu/Menu";
 import Home from "./components/HomePage/Home";
+// import Loading from "./components/Loading/Loading";
 import "./App.css"
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
@@ -12,6 +13,7 @@ function App() {
   
   return (
     <>
+      {/* <Loading /> */}
       <Navbar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>

@@ -9,6 +9,15 @@ function Marquee() {
     "Thrive Beyond Limit",
     "Thrive Beyond Limit",
     "Thrive Beyond Limit",
+    "Thrive Beyond Limit",
+    "Thrive Beyond Limit",
+    "Thrive Beyond Limit",
+    "Thrive Beyond Limit",
+    "Thrive Beyond Limit",
+    "Thrive Beyond Limit",
+    "Thrive Beyond Limit",
+    "Thrive Beyond Limit",
+    "Thrive Beyond Limit",
   ];
   useEffect(() => {
     const handleWheel = (event) => {

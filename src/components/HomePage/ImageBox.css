@@ -1,0 +1,73 @@
+.image-boxes {
+  /* background-color: red; */
+  /* height: 100vh; */
+  /* width: 100%; */
+  /* position: relative; */
+  padding: 5vw;
+  gap: 30px;
+  display: flex;
+}
+.textOfimages{
+    padding-top: 60px ;
+    padding-left: 90px ;
+    
+}
+.textOfimages h1{
+    width: 50%;
+    font-size: 80px;
+}
+.boxes {
+  height: 60vh;
+  width: 40vw;
+  background-color: #222222;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 3vw;
+  position: relative;
+}
+.boxes img {
+  object-fit: cover;
+  object-position: center;
+}
+.imageLayer {
+  border-radius: 30px;
+  height: 60vh;
+  width: 40vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(32, 32, 32);
+  transition: opacity 0.3 ease-in-out;
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 3vw;
+}
+.layer1{
+  /* color: white !important; */
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 30px 10px;
+}
+.layer1 h4, .layer1 h5{
+    cursor: pointer;
+}
+.layer1 h4{
+    text-transform: uppercase;
+}
+.layer2{
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+.icons{
+    /* color: white; */
+    margin: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+.boxes:hover .imageLayer {
+  opacity: 0.5;
+}

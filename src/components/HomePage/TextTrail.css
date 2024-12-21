@@ -1,0 +1,26 @@
+.trailBlock{
+    height: 30vh;
+    width: 100%;
+    background-color: rgb(201, 250, 201);
+    
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.cursor{
+    position: relative;
+}
+.cursor-text {
+    position: absolute; 
+    pointer-events: none;
+    font-size: 6em;
+    -webkit-text-stroke: 1.6px #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #161616;
+  }
+  
+  .cursor-text span {
+    color: #fff;
+  }
+  

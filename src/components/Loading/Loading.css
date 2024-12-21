@@ -1,0 +1,87 @@
+.loading-screen {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    pointer-events: none;
+    overflow: hidden; /* Disable scrolling */
+    position: fixed; /* Ensure it covers the entire screen */
+    top: 0;
+    left: 0;
+  }
+  
+  .counter {
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    display: flex;
+    height: 100px;
+    font-size: 100px;
+    line-height: 102px;
+    clip-path: polygon(0 0, 100% 0, 100% 100px, 0 100px);
+    font-weight: 400;
+  }
+  
+  .counter-1,
+  .counter-2,
+  .counter-3 {
+    position: relative;
+    top: -15px;
+  }
+  
+  .num1offset1 {
+    position: relative;
+    right: -25px;
+  }
+  
+  .num1offset2 {
+    position: relative;
+    right: -10px;
+  }
+  
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background: rgb(80, 80, 80);
+  }
+  
+  .loader-1 {
+    position: relative;
+    background-color: #00ff2a;
+    width: 0px; /* Start at zero for animation */
+  }
+  
+  .loader-2 {
+    position: relative;
+    background-color: #ffffff;
+    width: 0px; /* Start at zero for animation */
+  }
+  
+  .bar {
+    height: 50px;
+  }
+  
+  .num {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .app-container {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  

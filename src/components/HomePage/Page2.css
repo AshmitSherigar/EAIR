@@ -1,6 +1,6 @@
 .page2{
-    height: 100vh;
+    height: 200vh;
     width: 100%;
-    background-color: rgb(214, 252, 218);
+    background-color: hsl(120, 86%, 81%);
     position: absolute;
   }

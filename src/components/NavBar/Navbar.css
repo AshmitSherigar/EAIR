@@ -1,4 +1,4 @@
-/* General navigation styles */
+
 .navigation {
     height: 10vh;
     width: 100%;
@@ -6,10 +6,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 40px 25px;
+    background-color: hsl(120, 93%, 89%);
+    
+
 
 }
 
-/* Remove underline and control text appearance for links */
+
 .nav-links {
     text-decoration: none;
     text-transform: none; 
@@ -17,12 +20,12 @@
     cursor: pointer;
 }
 
-/* Styling for h1 inside .nav-links */
+
 .nav-logo .nav-links h1 {
     color: black;
 }
 
-/* Styling for h4 inside .nav-links */
+
 .nav-items .nav-links h4 {
     color: black;
     transition: opacity 0.3s;
