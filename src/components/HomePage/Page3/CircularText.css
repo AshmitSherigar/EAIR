@@ -1,0 +1,51 @@
+.big-circle {
+  height: 800px;
+  width: 800px;
+  border-radius: 50%;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.rotated {
+  position: relative;
+  animation: rotate 12s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  /* background-color: #fff; */
+  /* transition: all linear 10s; */
+}
+
+.rotated span {
+    position: absolute;
+    left: 50%;
+    color: transparent;
+    font-size: 40px;
+    font-weight: 900;
+    -webkit-text-stroke: 1px white;
+    /* transform-origin: 0 100px;  */
+}
+.big-circle:hover .rotated {
+    animation: rotate 12s linear infinite reverse;
+    /* transition: all linear 12s; */
+}
+/* .rotated span:hover{
+    cursor: progress;
+    } */
+    
+    @keyframes rotate {
+        from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,55 @@
+.grid-text{
+    height: 41%;
+    width: 100%;
+    /* background-color: #fff; */
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+.rectangle{
+    height: 400px;
+    width: 780px;
+    background-color: rgb(204, 237, 204);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+.rectangle:hover{
+ scale: 1.01;
+}
+.rectangle p{
+    margin: 40px 0;
+    width: 70%;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 30px;
+}
+.rectangle h1{
+
+    font-size: 40px;
+}
+.rectangle-inner{
+    display: flex;
+    gap: 13vw;
+    border: 1px solid black;
+    padding: 20px;
+
+}
+.rectangle-inner h3{
+    font-size: 25px;
+}
+.rectangle-inner button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+}
+.rectangle-inner button:active{
+    scale: 0.95;
+}
+.rectangle-inner button:hover{
+    box-shadow: 2px 2px 10px black;
+}
+

@@ -1,16 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600&family=Roboto+Slab:wght@100..900&family=Work+Sans:wght@100..900&display=swap');
+
 .trailBlock{
     height: 30vh;
     width: 100%;
     background-color: rgb(201, 250, 201);
     
     overflow: hidden;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    border: 2px solid rgb(40, 40, 40);
 
 }
 .cursor{
     position: relative;
-}
-.cursor-text {
+    font-family: "Roboto Slab";
+  }
+  .cursor-text {
     position: absolute; 
     pointer-events: none;
     font-size: 6em;
@@ -22,5 +27,6 @@
   
   .cursor-text span {
     color: #fff;
+    -webkit-text-stroke: 1px black;
   }
   

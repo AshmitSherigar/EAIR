@@ -5,10 +5,11 @@ function TextTrail() {
   useEffect(() => {
     
     const handleMouseMove = (e) => {
+      
       gsap.to(".cursor-text", {
-        x: e.clientX - 370 + "px",
-        y: e.clientY - 370 + "px",
-        stagger: -0.05,
+        x: e.clientX - 100 + "px",
+        y: e.clientY - 150 + "px",
+        stagger: -0.03,
       });
       console.log(e);
       
@@ -25,12 +26,12 @@ function TextTrail() {
   return (
     <div className="trailBlock">
       <div className="cursor">
-        <div className="cursor-text">EAIR</div>
-        <div className="cursor-text">EAIR</div>
-        <div className="cursor-text">EAIR</div>
-        <div className="cursor-text">EAIR</div>
+        <div className="cursor-text">EAIЯ</div>
+        <div className="cursor-text">EAIЯ</div>
+        <div className="cursor-text">EAIЯ</div>
+        <div className="cursor-text">EAIЯ</div>
         <div className="cursor-text">
-          <span>EAIR</span>
+          <span>EAIЯ</span>
         </div>
       </div>
     </div>

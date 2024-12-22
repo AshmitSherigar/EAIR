@@ -1,0 +1,77 @@
+.list-images {
+  display: flex;
+  gap: 25px;
+  margin: 90px 30px;
+  transform-style: preserve-3d;
+  perspective: 900px; 
+  /* flex-wrap: nowrap;
+    flex-shrink: 0; */
+    /* background-color: #fff; */
+  border-radius: 20px;
+
+  /* overflow: hidden; */
+
+
+}
+
+.item-image {
+  /* overflow: hidden; */
+  height: 400px;
+  width: 350px;
+  transition: transform 0.5s linear, filter 0.3s ease-in-out;
+
+  filter: brightness(0);
+  will-change: transform, filter;   
+  transform: translate3d(0, 0, 0);
+  position: relative;
+}
+.item-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.item-image:hover{
+    filter: brightness(0.2);
+    scale: 1.1;
+}
+
+.list-images .item-image:active {
+  filter: brightness(1);
+  transform: translateZ(200px);
+  /* scale: 1.1; */
+}
+.list-images .item-image:active + * {
+  filter: brightness(0.6);
+  transform: translateZ(150px) rotateY(25deg);
+}
+.list-images .item-image:active + * + * {
+  filter: brightness(0.4);
+  transform: translateZ(100px) rotateY(5deg);
+}
+.list-images .item-image:active + * + * + * {
+  filter: brightness(0.2);
+  transform: translateZ(50px) rotateY(1deg);
+}
+.list-images .item-image:has(+ *:active) {
+  filter: brightness(0.6);
+  transform: translateZ(150px) rotateY(-25deg);
+}
+.list-images .item-image:has(+ * + *:active) {
+  filter: brightness(0.4);
+  transform: translateZ(100px) rotateY(-5deg);
+}
+.list-images .item-image:has(+ * + * + *:active) {
+  filter: brightness(0.2);
+  transform: translateZ(50px) rotateY(-1deg);
+}
+
+
+
+.image-below-text h3{
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+.item-image:hover .image-below-text h3{
+  opacity: 1;
+}

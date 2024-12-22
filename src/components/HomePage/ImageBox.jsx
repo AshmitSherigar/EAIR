@@ -21,11 +21,9 @@ function ImageBox() {
   ];
   return (
     <>
-      <div className="textOfimages">
+      <div className="uppertext">
         <h3>Elements</h3>
-        <h1>
-            See the Highlights of this Website...
-        </h1>
+        <h1>See the Highlights of this Website...</h1>
       </div>
       <div className="image-boxes">
         {data.map((elem, index) => (
@@ -43,6 +41,16 @@ function ImageBox() {
             </div>
           </div>
         ))}
+      </div>
+      <div className="lowertext">
+        <div className="lowertext1">
+          <h2>Projects that will never work?</h2>
+          <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, aspernatur.</h5>
+        </div>
+        <div className="lowertext2">
+          <h2>Upcoming that you will never see!</h2>
+          <h5>Lorem ipsum dolor sit.</h5>
+        </div>
       </div>
     </>
   );
