@@ -71,7 +71,10 @@
 .image-below-text h3{
   opacity: 0;
   transition: all ease-in-out 0.5s;
+  font-family: "Ysabeau SC" ;
+  text-transform: uppercase;
 }
 .item-image:hover .image-below-text h3{
+  /* text-wrap: nowrap; */
   opacity: 1;
 }

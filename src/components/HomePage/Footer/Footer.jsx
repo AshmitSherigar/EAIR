@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import "./Footer.css";
-import { FaInstagram, FaFacebook, FaLinkedin, FaXTwitter, FaPlus, FaMinus } from "react-icons/fa6";
+import {
+  FaInstagram,
+  FaFacebook,
+  FaLinkedin,
+  FaXTwitter,
+  FaPlus,
+  FaMinus,
+} from "react-icons/fa6";
 
 function Footer() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -8,6 +15,8 @@ function Footer() {
   const toggleLanguages = () => {
     setIsExpanded(!isExpanded);
   };
+
+  const contactText = "CONTACT";
 
   return (
     <>
@@ -54,11 +63,24 @@ function Footer() {
             <h4>LANGUAGES</h4>
             {isExpanded ? <FaMinus /> : <FaPlus />}
           </div>
-          <div id="fourth"
+          <div
+            id="fourth"
             className={`footerbox-down ${isExpanded ? "show-options" : ""}`}
           >
-            <div className="options">English <br /> Hindi</div>
+            <div className="options">
+              English <br /> Hindi <br /> Telegu <br /> Tamil
+            </div>
           </div>
+        </div>
+        <div className="footer-contact">
+          <h1>
+            {contactText.split("").map((char, index) => (
+              <span key={index} className="contact-letter">
+                {char}
+              </span>
+            ))}
+          </h1>
+          <p>2024 © Copyright Reserved to EAIR</p>
         </div>
       </div>
     </>

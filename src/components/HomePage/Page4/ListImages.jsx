@@ -4,7 +4,7 @@ function ListImages() {
   const imageList = [
     {text:"Lorem", imageURL:"https://images.unsplash.com/photo-1734276221099-ba7f256b15e2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
     {text:"Elem Nelem", imageURL:"https://images.unsplash.com/photo-1732221560326-f6c8cb063e8b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
-    {text:"Episolon Charge", imageURL:"https://plus.unsplash.com/premium_photo-1734440541572-4e0367669638?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
+    {text:"Episolon Arg", imageURL:"https://plus.unsplash.com/premium_photo-1734440541572-4e0367669638?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
     {text:"Delta Attack", imageURL:"https://images.unsplash.com/photo-1553933899-131780ba04a3?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
     {text:"Gamma", imageURL:"https://plus.unsplash.com/premium_photo-1678566111481-8e275550b700?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
     {text:"Beta Defence", imageURL:"https://plus.unsplash.com/premium_photo-1670438167779-2cda71e3c777?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},

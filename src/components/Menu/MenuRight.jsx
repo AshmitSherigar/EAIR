@@ -15,7 +15,6 @@ function MenuRight() {
     },
   ];
 
-  // Function to handle mouse enter and leave events
   const handleMouseEnter = (index) => {
     setHoverIndex(index);
   };
@@ -35,14 +34,15 @@ function MenuRight() {
           <h1
             className="NavMenu"
             key={index}
-            onMouseEnter={() => handleMouseEnter(index)} // Set hover index on mouse enter
-            onMouseLeave={handleMouseLeave} // Reset hover index on mouse leave
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
           >
             <div className="block">
               {Array.from(elem).map((letter, idx) => (
                 <span
                   key={idx}
                   className={`letter ${hoverIndex === index ? "play" : ""}`}
+                  data-letter={letter.trim() === "" ? "\xa0" : letter}
                 >
                   {letter.trim() === "" ? "\xa0" : letter}
                 </span>
@@ -54,9 +54,7 @@ function MenuRight() {
       <div className="menu-right-bottom">
         {submenuData.map((elem, index) => (
           <div key={index} className="menu-right-bottom-part">
-            <h6 className={index === 2 ? "Active" : "NotActive"}>
-              {elem.col1}
-            </h6>
+            <h6 className={index === 2 ? "Active" : "NotActive"}>{elem.col1}</h6>
             {elem.col2 === "Email" ? (
               <h6 className="Email">
                 <a href="mailto:eair@gmail.com" className="EmailLink">
@@ -76,3 +74,4 @@ function MenuRight() {
 }
 
 export default MenuRight;
+  

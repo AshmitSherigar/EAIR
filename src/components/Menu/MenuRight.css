@@ -1,127 +1,147 @@
 .menu-right {
-    width: 40%;
-    height: 100%;
-    padding: 32px 27px;
+  width: 40%;
+  height: 100%;
+  padding: 32px 27px;
+}
 
-  }
-  
-  .NavMenu {
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 30px;
+.NavMenu {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
 
+.NavMenu .block {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+  height: 1em; /* Ensures consistent height for text blocks */
+}
+
+.NavMenu .letter {
+  display: inline-block;
+  position: relative;
+  transform: translateY(0);
+  height: 1em; /* Matches block height */
+  line-height: 1em; /* Vertically aligns text */
+  animation: none;
+}
+
+.NavMenu:hover .letter {
+  animation: moveUp 1s cubic-bezier(0.76, 0, 0.024, 1) forwards,
+             moveDown 1s cubic-bezier(0.76, 0, 0.024, 1) forwards 1s;
+}
+
+/* Keyframe animations */
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
   }
-  
-  .NavMenu .block {
-    display: flex;
-    overflow: hidden;
+  100% {
+    transform: translateY(-100%);
   }
-  
-  .NavMenu .letter {
-    display: inline-block;
-    transition: transform 0.1s cubic-bezier(0.76, 0, 0.024, 1);
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(-100%);
   }
-  
-  .NavMenu:hover .letter,
-  .NavMenu.play .letter {
-    transform: translateY(-100%); 
+  100% {
+    transform: translateY(0);
   }
-  
-  .NavMenu .block:last-child {
-    color: white;
+}
+
+/* Add staggered delay for each letter */
+.NavMenu .letter:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.NavMenu .letter:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.NavMenu .letter:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.NavMenu .letter:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.NavMenu .letter:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.NavMenu .letter:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.NavMenu .letter:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.NavMenu .letter:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+.menu-right-center {
+  height: 50%;
+  width: 100%;
+  padding: 15px 160px;
+}
+
+.menu-right-center img {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 85px;
+}
+
+.menu-right-center h1 {
+  text-align: left;
+  line-height: 29px;
+}
+
+.menu-right-bottom {
+  height: 50%;
+  width: 100%;
+  padding: 20px;
+}
+
+.menu-right-bottom-part {
+  height: 25%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu-right-bottom-part h6 {
+  width: 10%;
+  font-size: 11px;
+}
+
+.Active {
+  border-left: 5px solid black;
+  animation: blinkTextCursor 0.7s infinite;
+  white-space: nowrap;
+}
+
+.Tag:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  scale: 0.98;
+}
+
+.Email:hover {
+  opacity: 0.9;
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-left-color: black;
   }
-  
-  .NavMenu .letter:nth-child(1) {
-    transition-delay: 0s;
+  to {
+    border-left-color: transparent;
   }
-  
-  .NavMenu .letter:nth-child(2) {
-    transition-delay: 0.1s;
-  }
-  
-  .NavMenu .letter:nth-child(3) {
-    transition-delay: 0.2s;
-  }
-  
-  .NavMenu .letter:nth-child(4) {
-    transition-delay: 0.3s;
-  }
-  
-  .NavMenu .letter:nth-child(5) {
-    transition-delay: 0.4s;
-  }
-  
-  .NavMenu .letter:nth-child(6) {
-    transition-delay: 0.5s;
-  }
-  
-  .NavMenu .letter:nth-child(7) {
-    transition-delay: 0.6s;
-  }
-  
-  .NavMenu .letter:nth-child(8) {
-    transition-delay: 0.7s;
-  }
-  
-  .menu-right-center {
-    height: 50%;
-    width: 100%;
-    padding: 15px 160px;
-  }
-  
-  .menu-right-center img {
-    height: 40px;
-    width: 40px;
-    margin-bottom: 85px;
-  }
-  
-  .menu-right-center h1 {
-    text-align: left;
-    line-height: 29px;
-  }
-  
-  .menu-right-bottom {
-    height: 50%;
-    width: 100%;
-    padding: 20px;
-  }
-  
-  .menu-right-bottom-part {
-    height: 25%;
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  
-  .menu-right-bottom-part h6 {
-    width: 10%;
-    font-size: 11px;
-  }
-  
-  .Active {
-    border-left: 5px solid black;
-    animation: blinkTextCursor 0.7s infinite;
-    white-space: nowrap;
-  }
-  
-  .Tag:hover {
-    opacity: 0.9;
-    cursor: pointer;
-    scale: 0.98;
-  }
-  
-  .Email:hover {
-    opacity: 0.9;
-  }
-  
-  @keyframes blinkTextCursor {
-    from {
-      border-left-color: black;
-    }
-    to {
-      border-left-color: transparent;
-    }
-  }
-  
+}

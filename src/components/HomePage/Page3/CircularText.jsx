@@ -3,6 +3,7 @@ import './CircularText.css';
 
 function CircularText() {
   const textRef = useRef(null);
+  const radii = [150, 250, 350, 450];
 
   useEffect(() => {
     const textElement = textRef.current;
@@ -13,17 +14,31 @@ function CircularText() {
     textElement.innerHTML = characters
       .map(
         (char, i) =>
-          `<span style="transform: rotate(${i * degree}deg) translate(0, -350px); display: inline-block;">${char}</span>`
+          `<span style="transform: rotate(${i * degree}deg) translate(-10px, -330px); display: inline-block;">${char}</span>`
       )
       .join('');
   }, []);
 
   return (
-    <div className="big-circle">
-      <p className="rotated" ref={textRef}>
-        • Neural • Model • Data • Neural • Model • Data • Neural • Model • Data • Neural • Model • Data 
-      </p>
-    </div>
+    <>
+      <div className="big-circle">
+        <p className="rotated" ref={textRef}>
+          • Neural • Model • Data • Neural • Model • Data • Neural • Model • Data • Neural • Model • Data 
+        </p>
+      {radii.map((radius, index) => (
+        <div
+          key={index}
+          style={{
+            height: `${radius}px`,
+            width: `${radius}px`,
+
+          }}
+          className="dot"
+        ></div>
+      ))}
+      </div>
+
+    </>
   );
 }
 

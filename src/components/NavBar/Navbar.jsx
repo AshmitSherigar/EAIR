@@ -4,6 +4,7 @@ import { useNavigate , useLocation , Link} from "react-router-dom";
 
 
 function Navbar() {
+  // a,b = (1,2)
   const [isMenuOpen ,isSetMenuOpen] = useState(true);
   const location = useLocation()
   const navigate = useNavigate()
@@ -25,6 +26,7 @@ function Navbar() {
           <h1>EAIЯ</h1>
         </Link>
       </div>
+      
       <div className="nav-items">
         <Link className="nav-links" to={isMenuOpen ? "/menu" : "/"} >
           <h4>{isMenuOpen ? "Menu" : "Close"}</h4>

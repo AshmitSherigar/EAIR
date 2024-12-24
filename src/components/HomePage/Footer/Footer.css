@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Tusk;
+    src: url("./TuskerGrotesk-Super-BJF_n1PW.woff2");
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lavishly+Yours&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@600&family=Pattaya&family=Roboto+Slab:wght@100..900&family=Work+Sans:wght@100..900&family=Ysabeau+SC:wght@1..1000&display=swap');
 .footer {
     height: 100vh;
     width: 100%;
@@ -37,17 +42,25 @@
     padding-left: 30px;
     padding-top: 20px;
     color: white;
+    /* background-color: #fff; */
     height: 125px;
     width: 100%;
     overflow: hidden;
     transition: all 0.9 linear;
 
 }
+.footerbox-down p{
+    font-family: "Noto Sans";
+}
+.footerbox-up h4{
+    font-family:  "Ysabeau SC";
+}
 #fourth{
     opacity: 0;
     /* height: 0; */
 }
 #fourth.show-options {
+    font-family: "Noto Sans";
     opacity: 1;
     /* height: auto; */
     background-color: rgb(196, 255, 195);
@@ -66,8 +79,57 @@
 
 .icon:hover {
     scale: 1.19;
+    cursor: pointer;
 }
 
 .options {
     opacity: 1;
+}
+.footer-contact{
+    /* overflow-x: hidden;   */
+    position: absolute;
+    /* z-index: 99; */
+    bottom: 0;
+    left: 0;
+    height: 70%;
+    width: 100%;
+    /* background-color: #fff; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* overflow-y: hidden; */
+    flex-direction: column;
+    
+    
+}
+.footer-contact h1{
+    font-size: 270px;
+    transform: scaleY(1.6);
+    font-family: Tusk;
+    margin-top: 100px;
+    font-weight: 900;
+    /* gap: 1000px; */
+}
+.footer-contact .contact-letter{
+    display: inline-block;  
+    transform-origin: 50% 85.5%;
+    scale: none;
+    transform: translate3d(0px , 0px ,0px);
+    rotate: none;
+    color: rgb(121, 85, 17);
+    margin-right: 60px;
+    /* background-color: red; */
+    
+}
+.footer-contact .contact-letter:hover{
+    /* background-color: red; */
+    /* display: inline-block; */
+    transition: all 1s cubic-bezier(0.34, 1.6, 0.64, 1) ;
+    transform: scale(1,0.5);
+
+
+}
+
+.footer-contact p{
+    font-family: "Noto Sans";
 }
