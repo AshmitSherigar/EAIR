@@ -1,7 +1,12 @@
 
-/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lavishly+Yours&family=Oswald:wght@600&family=Roboto+Slab:wght@100..900&family=Work+Sans:wght@100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lavishly+Yours&family=Oswald:wght@600&family=Roboto+Slab:wght@100..900&family=Work+Sans:wght@100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lavishly+Yours&family=Oswald:wght@600&family=Pattaya&family=Roboto+Slab:wght@100..900&family=Work+Sans:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lavishly+Yours&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@600&family=Pattaya&family=Roboto+Slab:wght@100..900&family=Work+Sans:wght@100..900&family=Ysabeau+SC:wght@1..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lavishly+Yours&family=Oswald:wght@600&family=Pattaya&family=Roboto+Slab:wght@100..900&family=Work+Sans:wght@100..900&family=Ysabeau+SC:wght@1..1000&display=swap');
+
 
 .navigation {
     height: 10vh;
@@ -28,12 +33,13 @@
 
 .nav-logo .nav-links h1 {
     color: black;
-    font-family: "Pattaya";
+    font-family: "Ysabeau SC";
 }
 
 
 .nav-items .nav-links h4 {
     color: black;
+    font-family: "Ysabeau SC";
     transition: opacity 0.3s;
 }
 
