@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 
-.rotated {T
+.rotated {
   position: relative;
   animation: rotate 15s ease infinite;
   transform-origin: center;
