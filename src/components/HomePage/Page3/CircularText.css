@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 
-.rotated {
+.rotated {T
   position: relative;
   animation: rotate 15s ease infinite;
   transform-origin: center;
@@ -65,4 +65,36 @@
   /* border: 3px solid #c4c3c3; */
   border-radius: 40%;
 }
+.filler-text{
+  top: 50%;
+  left: -19%;
+  position: absolute;
+  /* background-color: #d64545; */
+  transition: all 0.4s ease-in;
+}
+.filler-text h3{
+  transform: rotateZ(-90deg);
+  font-size: 120px;
 
+}
+.filler-text:hover{
+  transform: translateX(80px);
+}
+
+
+.filler-side-text{
+  top: 50%;
+  right: -14%;
+  position: absolute;
+  /* background-color: #d64545; */
+  transition: all 0.4s ease-in;
+}
+.filler-side-text h3{
+  transform: rotateZ(-90deg);
+  font-size: 120px;
+
+}
+.filler-side-text:hover{
+  transform: translateX(-80px) rotateZ(180deg);
+
+}

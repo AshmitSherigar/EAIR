@@ -38,6 +38,9 @@ function CircularText() {
       ))}
       </div>
 
+      <div className="filler-text"><h3>Now Learning</h3></div>
+      <div className="filler-side-text"><h3>Very Soon</h3></div>
+
     </>
   );
 }
