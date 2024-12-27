@@ -24,6 +24,7 @@
   will-change: transform, filter;   
   transform: translate3d(0, 0, 0);
   position: relative;
+  user-select: none;
 }
 .item-image img{
     height: 100%;
